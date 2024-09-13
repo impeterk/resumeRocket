@@ -1,22 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { FileText, Zap, Target, Sparkles } from "lucide-react";
+import { Zap, Target, Sparkles, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import ClientBackground from "@/components/client/background";
+import { ThemeToggle } from "@/components/client/theme-switch";
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900 overflow-hidden font-sans">
+    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900 overflow-hidden ">
       <ClientBackground />
       <header className="px-4 lg:px-6 h-16 flex items-center border-b border-slate-200 dark:border-slate-800 relative z-10">
         <Link className="flex items-center justify-center" href="#">
-          <FileText className="h-6 w-6 text-indigo-500" />
+          <TrendingUp className="h-6 w-6 text-indigo-500" />
+
           <span className="ml-2 text-xl font-bold text-slate-900 dark:text-slate-100">
-            ResumeRocket
+            ResumeRise
           </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
+          <ThemeToggle />
           <Link
             className="text-sm font-medium text-slate-700 hover:text-indigo-500 dark:text-slate-300 dark:hover:text-indigo-400"
             href="#"
@@ -48,7 +51,7 @@ export default function LandingPage() {
                   </h1>
                   <p className="max-w-[600px] text-slate-700 md:text-xl dark:text-slate-400">
                     Don&apos;t just build a resume. Ignite your career with
-                    ResumeRocket. Craft a stellar CV that lands interviews and
+                    ResumeRise. Craft a stellar CV that lands interviews and
                     propels you towards your dream job.
                   </p>
                 </div>
@@ -114,7 +117,7 @@ export default function LandingPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-100 dark:bg-slate-800">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12 text-slate-900 dark:text-slate-100">
-              Why ResumeRocket?
+              Why ResumeRise?
             </h2>
             <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
               <div className="flex flex-col items-center space-y-4 text-center">
@@ -153,7 +156,7 @@ export default function LandingPage() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-slate-200 dark:border-slate-800 relative z-10">
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          © 2024 ResumeRocket. All rights reserved.
+          © 2024 ResumeRise. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
